@@ -1,1 +1,142 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #17233b;
+}
+
+/* NAVBAR */
+header {
+    background: #101d35;
+    padding: 20px 7%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: white;
+}
+
+.navbar h2 span {
+    color: #ff9c45;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: #eaf0ff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    color: #68748a;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: #2457e6;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+
+/* MOBIL */
+.mobil {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    margin: 30px auto;
+    padding: 15px;
+    box-shadow: 0 5px 20px #00000015;
+    border-radius: 12px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    color: #2457e6;
+    font-weight: bold;
+}
+
+/* LAYANAN */
+.layanan {
+    padding: 70px 20px;
+    background: #f4f6fa;
+    text-align: center;
+}
+
+.layanan p {
+    margin-top: 15px;
+}
+
+/* KONTAK */
+.kontak {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #101d35;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
