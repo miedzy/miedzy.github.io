@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveGo - Rental Mobil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Drive<span>Go</span></div>
+
+            <ul class="nav-menu">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#mobil">Pilihan Mobil</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+            </ul>
+
+            <a href="#booking" class="btn">Pesan Sekarang</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="beranda">
+        <div class="hero-content">
+            <p class="subtitle">PARTNER PERJALANAN ANDA</p>
+
+            <h1>
+                Perjalanan Nyaman,
+                <span>Dimulai Dari Sini.</span>
+            </h1>
+
+            <p>
+                Temukan mobil yang tepat untuk setiap perjalanan.
+                Pilihan lengkap, harga transparan, dan layanan terpercaya.
+            </p>
+
+            <a href="#mobil" class="btn">Jelajahi Mobil →</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85"
+                alt="Mobil rental">
+        </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking" id="booking">
+        <form id="bookingForm">
+            <div>
+                <label>Lokasi Penjemputan</label>
+                <input type="text" id="lokasi"
+                    placeholder="Masukkan lokasi" required>
+            </div>
+
+            <div>
+                <label>Tanggal Mulai</label>
+                <input type="date" id="mulai" required>
+            </div>
+
+            <div>
+                <label>Tanggal Selesai</label>
+                <input type="date" id="selesai" required>
+            </div>
+
+            <button type="submit" class="btn">
+                Cari Mobil →
+            </button>
+        </form>
+    </section>
+
+    <!-- STATISTIK -->
+    <section class="stats">
+        <div>
+            <h2>50+</h2>
+            <p>Unit Mobil</p>
+        </div>
+
+        <div>
+            <h2>1.2K+</h2>
+            <p>Pelanggan Puas</p>
+        </div>
+
+        <div>
+            <h2>24/7</h2>
+            <p>Layanan Pelanggan</p>
+        </div>
+
+        <div>
+            <h2>100%</h2>
+            <p>Kenyamanan</p>
+        </div>
+    </section>
+
+    <!-- PILIHAN MOBIL -->
+    <section class="cars" id="mobil">
+        <div class="section-title">
+            <p>PILIHAN TERBAIK</p>
+            <h2>Temukan Mobil Favoritmu.</h2>
+        </div>
+
+        <div class="car-container">
+
+            <div class="car-card">
+                <img
+                    src="https://images.unsplash.com/photo-1617469767053-d3b523a0b982?auto=format&fit=crop&w=900&q=80"
+                    alt="Toyota Avanza">
+
+                <h3>Toyota Avanza</h3>
+                <p>MPV | 7 Kursi | Automatic</p>
+
+                <div class="price">
+                    Rp350.000 / hari
+                </div>
+
+                <a href="#booking" class="btn">Pilih Mobil</a>
+            </div>
+
+            <div class="car-card">
+                <img
+                    src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=900&q=80"
+                    alt="Mitsubishi Xpander">
+
+                <h3>Mitsubishi Xpander</h3>
+                <p>MPV | 7 Kursi | Automatic</p>
+
+                <div class="price">
+                    Rp450.000 / hari
+                </div>
+
+                <a href="#booking" class="btn">Pilih Mobil</a>
+            </div>
+
+            <div class="car-card">
+                <img
+                    src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80"
+                    alt="BMW">
+
+                <h3>BMW 3 Series</h3>
+                <p>Sedan | 5 Kursi | Automatic</p>
+
+                <div class="price">
+                    Rp1.200.000 / hari
+                </div>
+
+                <a href="#booking" class="btn">Pilih Mobil</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section class="services" id="layanan">
+        <div class="section-title">
+            <p>KENAPA MEMILIH KAMI?</p>
+            <h2>Lebih Dari Sekadar Rental Mobil.</h2>
+        </div>
+
+        <div class="service-container">
+            <div class="service-card">
+                <h3>✓ Mobil Terawat</h3>
+                <p>Mobil selalu diperiksa sebelum digunakan.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>✓ Harga Transparan</h3>
+                <p>Harga jelas tanpa biaya tersembunyi.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>✓ Proses Praktis</h3>
+                <p>Pemesanan mudah dan cepat.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>✓ Layanan Ramah</h3>
+                <p>Tim kami siap membantu perjalanan Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARA PEMESANAN -->
+    <section class="steps" id="tentang">
+        <div class="section-title">
+            <p>MUDAH DAN CEPAT</p>
+            <h2>3 Langkah Menuju Perjalananmu.</h2>
+        </div>
+
+        <div class="step-container">
+            <div>
+                <h2>01</h2>
+                <h3>Pilih Mobil</h3>
+                <p>Pilih kendaraan sesuai kebutuhan.</p>
+            </div>
+
+            <div>
+                <h2>02</h2>
+                <h3>Hubungi Kami</h3>
+                <p>Konfirmasi tanggal dan lokasi.</p>
+            </div>
+
+            <div>
+                <h2>03</h2>
+                <h3>Siap Berangkat</h3>
+                <p>Nikmati perjalanan Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>Drive<span>Go</span></h2>
+        <p>Partner perjalanan terpercaya Anda.</p>
+        <p>WhatsApp: 0812-3456-7890</p>
+        <p>Email: halo@drivego.id</p>
+
+        <div class="copyright">
+            © 2026 DriveGo Rental Mobil. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.getElementById("bookingForm")
+        .addEventListener("submit", function(e) {
+
+            e.preventDefault();
+
+            const lokasi =
+                document.getElementById("lokasi").value;
+
+            const mulai =
+                document.getElementById("mulai").value;
+
+            const selesai =
+                document.getElementById("selesai").value;
+
+            if (selesai < mulai) {
+                alert("Tanggal selesai tidak boleh sebelum tanggal mulai!");
+                return;
+            }
+
+            const nomorWA = "6281234567890";
+
+            const pesan =
+                `Halo, saya ingin menyewa mobil.
+Lokasi: ${lokasi}
+Tanggal mulai: ${mulai}
+Tanggal selesai: ${selesai}`;
+
+            window.open(
+                `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,
+                "_blank"
+            );
+        });
+    </script>
+
+</body>
+</html>
