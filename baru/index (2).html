@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DriveGo - Sewa mobil nyaman, mudah, dan terpercaya.">
+  <title>DriveGo | Rental Mobil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#beranda">Drive<span>Go</span></a>
+      <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#beranda">Beranda</a>
+        <a href="#mobil">Pilihan Mobil</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#tentang">Tentang Kami</a>
+      </nav>
+      <a class="button button-small nav-cta" href="#pesan">Pesan Sekarang</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">PARTNER PERJALANAN ANDA</p>
+          <h1>Perjalanan Nyaman,<br>Dimulai <span>Dari Sini.</span></h1>
+          <p class="hero-description">
+            Temukan mobil yang tepat untuk setiap perjalanan. Pilihan lengkap,
+            harga transparan, dan layanan terpercaya.
+          </p>
+          <a class="button" href="#mobil">Jelajahi Mobil <span aria-hidden="true">→</span></a>
+          <div class="hero-points">
+            <span>✓ Harga transparan</span>
+            <span>✓ Mobil terawat</span>
+            <span>✓ Proses mudah</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img
+            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85"
+            alt="Mobil modern untuk perjalanan"
+          >
+          <div class="floating-card">
+            <span class="floating-icon">✦</span>
+            <div><strong>Perjalanan lebih mudah</strong><small>Mulai petualangan Anda bersama DriveGo</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section" id="pesan">
+      <div class="container booking-card">
+        <div class="booking-heading">
+          <p class="eyebrow">MULAI PERJALANAN</p>
+          <h2>Temukan mobil pilihan Anda</h2>
+          <p>Isi kebutuhan perjalanan, lalu hubungi tim kami untuk konfirmasi.</p>
+        </div>
+        <form class="booking-form" onsubmit="event.preventDefault(); alert('Terima kasih! Silakan hubungi DriveGo untuk konfirmasi pemesanan.');">
+          <label>Lokasi pengambilan
+            <select required>
+              <option value="">Pilih lokasi</option>
+              <option>Surabaya</option>
+              <option>Sidoarjo</option>
+              <option>Malang</option>
+            </select>
+          </label>
+          <label>Tanggal pengambilan
+            <input type="date" required>
+          </label>
+          <label>Jenis mobil
+            <select required>
+              <option value="">Pilih jenis mobil</option>
+              <option citycar>City car</option>
+              <option>MPV</option>
+              <option>SUV</option>
+              <option>Premium</option>
+            </select>
+          </label>
+          <button class="button search-button" type="submit">Cari Mobil <span>→</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="mobil">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">ARMADA DRIVEGO</p><h2>Mobil favorit untuk setiap perjalanan</h2></div>
+          <a class="text-link" href="#pesan">Lihat semua mobil →</a>
+        </div>
+        <div class="car-grid">
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=900&q=80" alt="Mobil sedan">
+            <div class="car-info"><div class="car-title"><h3>Chevrolet Camaro</h3><span class="tag">Premium</span></div><p class="car-meta">Automatic · 2 penumpang · Bensin</p><div class="car-bottom"><p><strong>Rp850.000</strong><small> / hari</small></p><a href="#pesan" class="button button-outline">Pesan</a></div></div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1617469767053-d3b523a0b982?auto=format&fit=crop&w=900&q=80" alt="Mobil keluarga">
+            <div class="car-info"><div class="car-title"><h3>Mobil Keluarga</h3><span class="tag">MPV</span></div><p class="car-meta">Automatic · 7 penumpang · Bensin</p><div class="car-bottom"><p><strong>Rp450.000</strong><small> / hari</small></p><a href="#pesan" class="button button-outline">Pesan</a></div></div>
+          </article>
+          <article class="car-card">
+            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80" alt="Mobil SUV">
+            <div class="car-info"><div class="car-title"><h3>Urban SUV</h3><span class="tag">SUV</span></div><p class="car-meta">Automatic · 5 penumpang · Bensin</p><div class="car-bottom"><p><strong>Rp600.000</strong><small> / hari</small></p><a href="#pesan" class="button button-outline">Pesan</a></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section" id="layanan">
+      <div class="container">
+        <div class="section-heading centered"><div><p class="eyebrow">KENAPA DRIVEGO?</p><h2>Layanan yang membuat perjalanan tenang</h2><p>Kami membantu setiap perjalanan terasa lebih praktis dari awal hingga akhir.</p></div></div>
+        <div class="service-grid">
+          <article class="service-card"><span class="service-icon">🚘</span><h3>Mobil Terawat</h3><p>Armada diperiksa dan dibersihkan sebelum digunakan.</p></article>
+          <article class="service-card"><span class="service-icon">💳</span><h3>Harga Transparan</h3><p>Informasi harga jelas tanpa biaya tersembunyi.</p></article>
+          <article class="service-card"><span class="service-icon">🕒</span><h3>Layanan Fleksibel</h3><p>Pilihan durasi sewa untuk berbagai kebutuhan Anda.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="tentang">
+      <div class="container about-content">
+        <div><p class="eyebrow">TENTANG DRIVEGO</p><h2>Teman perjalanan yang bisa Anda andalkan.</h2></div>
+        <p>DriveGo hadir untuk memudahkan kebutuhan transportasi Anda. Dengan pilihan kendaraan yang beragam dan proses pemesanan yang sederhana, kami siap menemani perjalanan bisnis, liburan, maupun aktivitas sehari-hari.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content"><a class="logo" href="#beranda">Drive<span>Go</span></a><p>© 2026 DriveGo. Teman perjalanan Anda.</p><a href="#beranda">Kembali ke atas ↑</a></div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuButton.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('show');
+      menuButton.setAttribute('aria-expanded', isOpen);
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+      menuButton.setAttribute('aria-expanded', 'false');
+    }));
+  </script>
+</body>
+</html>
