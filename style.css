@@ -4,106 +4,66 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #101d35;
-    background: #ffffff;
+    background-color: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
 }
 
-/* NAVBAR */
+/* HEADER */
 header {
-    background: white;
-    padding: 20px 7%;
-    border-bottom: 1px solid #eeeeee;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    font-size: 27px;
-    font-weight: bold;
-}
-
-.logo span,
-footer h2 span {
-    color: #2457e6;
-}
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #555;
-    font-size: 14px;
-}
-
-.btn {
-    display: inline-block;
-    background: #2457e6;
+    background-color: #14213d;
     color: white;
-    padding: 13px 23px;
-    border-radius: 7px;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    font-size: 26px;
+    color: #fca311;
+}
+
+nav a {
+    color: white;
     text-decoration: none;
-    border: none;
-    cursor: pointer;
+    margin-left: 20px;
     font-weight: bold;
-    transition: .3s;
 }
 
-.btn:hover {
-    background: #153fbd;
-    transform: translateY(-2px);
+nav a:hover,
+nav a.active {
+    color: #fca311;
 }
 
-/* HERO */
+/* BERANDA */
 .hero {
-    padding: 80px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 45px;
-    background: #f5f7ff;
+    padding: 70px 8%;
+    gap: 40px;
+    background-color: white;
 }
 
-.hero-content {
+.hero-text {
     flex: 1;
 }
 
-.subtitle {
-    color: #2457e6;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
+.hero-text h1 {
+    font-size: 42px;
+    color: #14213d;
+    margin-bottom: 20px;
 }
 
-.hero h1 {
-    font-size: 55px;
-    line-height: 1.15;
-    margin: 20px 0;
-}
-
-.hero h1 span {
-    color: #2457e6;
-}
-
-.hero-content > p:not(.subtitle) {
-    color: #68748a;
-    line-height: 1.8;
+.hero-text p {
     margin-bottom: 25px;
+    color: #555;
 }
 
 .hero-image {
@@ -112,270 +72,169 @@ footer h2 span {
 
 .hero-image img {
     width: 100%;
-    border-radius: 20px 80px 20px 20px;
-}
-
-/* BOOKING */
-.booking {
-    padding: 30px 7%;
-    background: white;
-}
-
-.booking form {
-    display: flex;
-    align-items: end;
-    gap: 20px;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 30px #00000012;
-}
-
-.booking form div {
-    flex: 1;
-}
-
-.booking label {
-    display: block;
-    font-weight: bold;
-    font-size: 13px;
-    margin-bottom: 8px;
-}
-
-.booking input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-}
-
-/* STATS */
-.stats {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 45px 7%;
-    text-align: center;
-}
-
-.stats h2 {
-    font-size: 30px;
-    color: #2457e6;
-}
-
-.stats p {
-    color: #68748a;
-    font-size: 13px;
-}
-
-/* SECTION TITLE */
-.section-title {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-title p {
-    color: #2457e6;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.section-title h2 {
-    font-size: 35px;
-    margin-top: 10px;
-}
-
-/* CARS */
-.cars {
-    padding: 80px 7%;
-    background: #f8f9fc;
-}
-
-.car-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.car-card {
-    background: white;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px #00000008;
-    transition: .3s;
-}
-
-.car-card:hover {
-    transform: translateY(-7px);
-}
-
-.car-card img {
-    width: 100%;
-    height: 200px;
+    height: 330px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
-.car-card h3 {
-    margin: 15px 0 5px;
-}
-
-.car-card p {
-    color: #777;
-    font-size: 13px;
-}
-
-.price {
-    font-size: 18px;
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background-color: #fca311;
+    color: #14213d;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 7px;
     font-weight: bold;
-    color: #2457e6;
-    margin: 18px 0;
 }
 
-/* SERVICES */
-.services {
-    padding: 80px 7%;
+.btn:hover {
+    background-color: #e28e00;
 }
 
-.service-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+/* CONTENT */
+.content {
+    padding: 60px 8%;
+    text-align: center;
 }
 
-.service-card {
-    padding: 25px;
-    background: #f5f7ff;
-    border-radius: 10px;
-}
-
-.service-card h3 {
-    margin-bottom: 12px;
-    font-size: 16px;
-}
-
-.service-card p {
-    color: #68748a;
-    font-size: 13px;
-    line-height: 1.7;
-}
-
-/* STEPS */
-.steps {
-    padding: 80px 7%;
-    background: #f8f9fc;
-}
-
-.step-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.step-container div {
-    padding: 25px;
-    background: white;
-    border-radius: 10px;
-}
-
-.step-container h2 {
-    color: #2457e6;
+.content h1,
+.content h2 {
+    color: #14213d;
     margin-bottom: 15px;
 }
 
-.step-container p {
-    color: #68748a;
-    margin-top: 8px;
-    font-size: 13px;
+/* PILIHAN MOBIL */
+.car-container,
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.car-card,
+.service-card {
+    background-color: white;
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.car-card img,
+.service-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.car-card h3,
+.service-card h3 {
+    color: #14213d;
+    margin: 12px 0;
+}
+
+.car-card h4 {
+    color: #e28e00;
+    margin: 15px 0;
+}
+
+.car-card p,
+.service-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* TENTANG KAMI */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 8%;
+    background-color: white;
+}
+
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.about-text h1 {
+    color: #14213d;
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    color: #fca311;
+    margin-top: 20px;
+}
+
+/* BERANDA CONTENT */
+.content p {
+    color: #555;
 }
 
 /* FOOTER */
 footer {
-    background: #101d35;
+    background-color: #14213d;
     color: white;
     text-align: center;
-    padding: 50px 20px 20px;
-}
-
-footer h2 {
-    margin-bottom: 15px;
-}
-
-footer p {
-    color: #b5bfd0;
-    margin: 8px;
-    font-size: 13px;
-}
-
-.copyright {
-    border-top: 1px solid #ffffff25;
+    padding: 20px;
     margin-top: 30px;
-    padding-top: 20px;
-    font-size: 12px;
-    color: #b5bfd0;
 }
 
-/* RESPONSIVE MOBILE */
+/* RESPONSIVE HP */
 @media (max-width: 768px) {
-
-    .navbar {
-        flex-wrap: wrap;
+    header {
+        flex-direction: column;
         gap: 15px;
     }
 
-    .nav-menu {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
     }
 
     .hero {
         flex-direction: column;
-        padding: 50px 6%;
+        padding: 40px 6%;
     }
 
-    .hero h1 {
-        font-size: 38px;
+    .hero-text h1 {
+        font-size: 30px;
     }
 
-    .booking form {
+    .hero-image img {
+        height: 250px;
+    }
+
+    .about {
         flex-direction: column;
-        align-items: stretch;
+        padding: 40px 6%;
     }
 
-    .stats {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+    .about-image img {
+        height: 260px;
     }
 
-    .car-container {
-        grid-template-columns: 1fr;
-    }
-
-    .service-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .step-container {
-        grid-template-columns: 1fr;
-    }
-
-    .section-title h2 {
-        font-size: 27px;
-    }
-}
-
-@media (max-width: 420px) {
-    .nav-menu {
-        gap: 10px;
-    }
-
-    .nav-menu a {
-        font-size: 12px;
-    }
-
-    .service-container {
-        grid-template-columns: 1fr;
+    .car-card,
+    .service-card {
+        width: 100%;
     }
 }
